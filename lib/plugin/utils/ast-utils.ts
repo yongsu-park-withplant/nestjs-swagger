@@ -131,7 +131,6 @@ export function getDefaultTypeFormatFlags(enclosingNode: Node) {
   let formatFlags =
     TypeFormatFlags.UseTypeOfFunction |
     TypeFormatFlags.NoTruncation |
-    TypeFormatFlags.UseFullyQualifiedType |
     TypeFormatFlags.WriteTypeArgumentsOfSignature;
   if (enclosingNode && enclosingNode.kind === SyntaxKind.TypeAliasDeclaration)
     formatFlags |= TypeFormatFlags.InTypeAlias;
